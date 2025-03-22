@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/', methods=['GET'])
 def base_route():
     student_id = "S23-02-LastNameFirstName"
-    return jsonify({"200616452": "200616452"})
+    return jsonify({"200616452": "Harpreet Singh"})
 
 @app.route('/webhook', methods=['POST'])
 def webhook_route():
@@ -33,5 +33,4 @@ def generate_fulfillment_text(req):
     return fulfillment_text
 
 if __name__ == '__main__':
-    app.run(debug=True)
-    
+    app.run(dubug=True)
